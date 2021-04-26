@@ -12,37 +12,19 @@ nav.nav {
         display: flex;
         align-items: center;
         padding: 1.2rem 3.2rem;
-        @include fontBold(1.5rem, 1.9rem, $grey);
+        @include fontBold(1.5rem, 1.9rem, $black);
         font-weight: 300;
         position: relative;
-        border-right: 0px solid transparent;
-
         transition: color 0.2s cubic-bezier(1, 0, 0, 1),
           border-right 0.4s cubic-bezier(1, 0, 0, 1) 0.2s;
 
         &:hover {
-          color: $primary;
-          border-right: 4px solid $primary;
+          color: $white;
+          border-radius: 0px 12px 12px 0px;
 
           svg {
             path {
-              fill: $primary;
-            }
-          }
-        }
-
-        svg {
-          margin-right: 1rem;
-        }
-
-        &.active {
-          background-color: $navHover;
-          color: $primary;
-          border-right: 4px solid $primary;
-
-          svg {
-            path {
-              fill: $primary;
+              fill: $white;
             }
           }
         }
@@ -54,8 +36,7 @@ nav.nav {
           right: 0;
           height: 100%;
           width: 3px;
-          background-color: $navHover;
-          border-radius: 2px;
+          background-color: $primary;
           transform: scaleY(0);
           z-index: 20;
           transition: transform 0.2s, width 0.4s cubic-bezier(1, 0, 0, 1) 0.2s,
@@ -66,7 +47,23 @@ nav.nav {
           transform: scaleY(1);
           width: 100%;
           z-index: -1;
-          border-radius: 2px;
+          border-radius: 0px 12px 12px 0px;
+        }
+
+        svg {
+          margin-right: 1rem;
+        }
+
+        &.active {
+          background-color: $primary;
+          color: $white;
+          border-radius: 0px 12px 12px 0px;
+
+          svg {
+            path {
+              fill: $white;
+            }
+          }
         }
       }
     }

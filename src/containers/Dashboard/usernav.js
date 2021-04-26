@@ -20,6 +20,7 @@ const UserNav = () => {
           <NavLink
             onClick={closeNav}
             activeClassName="active"
+            className="active"
             to={{ pathname: "user/overview" }}
           >
             <HomeIcon />
