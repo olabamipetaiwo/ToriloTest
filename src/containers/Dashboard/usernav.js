@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom"; 
+import { NavLink } from "react-router-dom";
 import { ReactComponent as HomeIcon } from "assets/svgs/home.svg";
 import { ReactComponent as CompanyIcon } from "assets/svgs/company.svg";
 import { ReactComponent as ChatIcon } from "assets/svgs/chat.svg";
@@ -18,54 +18,31 @@ const UserNav = () => {
     <nav className="nav">
       <ul>
         <li>
-          <NavLink
-            onClick={closeNav}
-            activeClassName="active"
-            to="overview"
-          >
+          <NavLink onClick={closeNav} activeClassName="active" to="overview">
             <HomeIcon />
             <span>Overview</span>
           </NavLink>
         </li>
         <li>
-          <NavLink
-            onClick={closeNav}
-            activeClassName="active"
-            to="companies" 
-          >
+          <NavLink onClick={closeNav} activeClassName="active" to="companies">
             <CompanyIcon />
             <span>Companies</span>
           </NavLink>
         </li>
         <li>
-          <NavLink
-            onClick={closeNav}
-            activeClassName="active"
-            to="projects"
-          >
+          <NavLink onClick={closeNav} activeClassName="active" to="projects">
             <ProjectIcon />
             <span>Projects</span>
           </NavLink>
         </li>
         <li>
-          <NavLink
-            onClick={closeNav}
-            activeClassName="active"
-            to="messages"
-          >
+          <NavLink onClick={closeNav} activeClassName="active" to="messages">
             <ChatIcon />
             <span>Messages</span>
           </NavLink>
         </li>
-      </ul>
-
-       <ul>
         <li>
-          <NavLink
-            onClick={closeNav}
-            activeClassName="active"
-            to="overview"
-          >
+          <NavLink onClick={closeNav} activeClassName="active"  to="settings">
             <SettingsIcon />
             <span>Settings</span>
           </NavLink>

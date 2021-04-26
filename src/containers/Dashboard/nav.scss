@@ -4,10 +4,19 @@ nav.nav {
   ul {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     padding: 0;
     width: 24rem;
+    height: 90vh;
+    height: 85vh;
+    padding-top: 10rem;
+
 
     li {
+      &:last-child {
+        margin-top: auto;
+      }
+
       a {
         display: flex;
         align-items: center;
