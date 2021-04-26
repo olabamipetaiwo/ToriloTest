@@ -1,0 +1,61 @@
+@import "../abstract/config.scss";
+@import "../abstract/animations.scss";
+
+
+.toast {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  width: 35rem;
+  font-family:$primaryFont;
+
+  .toast-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    .toast-container-item {
+      width: 30rem;
+      background: #ffffff;
+      box-shadow: 0px 4px 16px rgba(149, 54, 0, 0.1);
+      border-radius: 4px;
+      z-index: 5;
+      top: 0;
+      right: 3rem;
+      position: relative;
+      animation:toastIn 0.8s ease-in forwards;
+      padding: 2rem;
+      animation-name:toastOut;
+      animation-delay: 3s;
+      animation-duration: 0.6s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+
+      &.info {
+        background-color: rgba(#a4f0de,0.5);
+      }
+
+      &.error {
+        background-color: rgba(#f2bcbc,0.5);
+      }
+
+      span.toast-close {
+        cursor: pointer;
+        position: absolute;
+        top: 0.5rem;
+        right: 2rem;
+        font-size: 2rem;
+        font-weight: 800;
+      }
+
+      p {
+        font-family: $primaryFont;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        color: #000000;
+      }
+    }
+  }
+}

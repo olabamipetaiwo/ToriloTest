@@ -1,0 +1,99 @@
+/*--------------------------
+    typography
+---------------------------*/
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+// @media only screen and (min-width: 112.5em) {
+//   html {
+//     font-size: 75%;
+//   }
+// }
+
+// @media only screen and (max-width: 75em) {
+//   html {
+//     font-size: 56.25%;
+//   }
+// }
+
+// @media only screen and (max-width: 56.25em) {
+//   html {
+//     font-size: 50%;
+//   }
+// }
+
+// @media only screen and (max-width: 37.5em) {
+//   html {
+//     font-size: 50%;
+//   }
+// }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $primaryFont;
+  font-weight: 300;
+  line-height: 1.6rem;
+}
+
+.h-1 {
+  @include fontBold(3.6rem, 4.6rem, $black);
+  font-weight: 700;
+}
+
+.h-2 {
+  @include fontNormal(2rem, 2.5rem, $white);
+  font-weight: 700;
+}
+
+.h-admin {
+  @include fontNormal(1.6rem, 2rem, $black);
+  font-weight: 300;
+}
+
+.h-admin-bold {
+  @include fontBold(2rem, 3rem, $black);
+}
+
+.p-1 {
+  @include fontNormal(1.4rem, 2rem, $grey-6);
+  text-align: center;
+}
+
+.p-2 {
+  @include fontNormal(1.4rem, 1.8rem, $black);
+}
+
+.p-3 {
+  @include fontNormal(1.6rem, 2.4rem, $black);
+}
+
+.text-grey-9 {
+  @include fontNormal(1.4rem, 1.7rem, $grey-9);
+}
+
+p.error {
+  @include fontNormal(1.2rem, 1.5rem, orangered);
+  margin: 0;
+  text-align: left;
+  padding-top: 1rem;
+}
+
+.red {
+  color: orangered;
+}
