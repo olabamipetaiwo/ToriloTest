@@ -4,6 +4,7 @@ import { ReactComponent as HomeIcon } from "assets/svgs/home.svg";
 import { ReactComponent as CompanyIcon } from "assets/svgs/company.svg";
 import { ReactComponent as ChatIcon } from "assets/svgs/chat.svg";
 import { ReactComponent as ProjectIcon } from "assets/svgs/project.svg";
+import { ReactComponent as SettingsIcon } from "assets/svgs/settings.svg";
 // import { AUTHLINKS } from "data/auth";
 import "./nav.scss";
 
@@ -20,8 +21,7 @@ const UserNav = () => {
           <NavLink
             onClick={closeNav}
             activeClassName="active"
-            className="active"
-            to={{ pathname: "user/overview" }}
+            to="overview"
           >
             <HomeIcon />
             <span>Overview</span>
@@ -31,7 +31,7 @@ const UserNav = () => {
           <NavLink
             onClick={closeNav}
             activeClassName="active"
-            to={{ pathname: "user/companies" }}
+            to="companies" 
           >
             <CompanyIcon />
             <span>Companies</span>
@@ -41,7 +41,7 @@ const UserNav = () => {
           <NavLink
             onClick={closeNav}
             activeClassName="active"
-            to={{ pathname: "user/projects" }}
+            to="projects"
           >
             <ProjectIcon />
             <span>Projects</span>
@@ -51,10 +51,23 @@ const UserNav = () => {
           <NavLink
             onClick={closeNav}
             activeClassName="active"
-            to={{ pathname: "user/messages" }}
+            to="messages"
           >
             <ChatIcon />
             <span>Messages</span>
+          </NavLink>
+        </li>
+      </ul>
+
+       <ul>
+        <li>
+          <NavLink
+            onClick={closeNav}
+            activeClassName="active"
+            to="overview"
+          >
+            <SettingsIcon />
+            <span>Settings</span>
           </NavLink>
         </li>
       </ul>
