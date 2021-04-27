@@ -1,55 +1,33 @@
-@import '../fonts/style.scss';
-@import './config';
-@import './root';
-@import './typography';
-@import './animations';
-@import './util';
-@import '../components/button';
-@import '../components/input';
+@import "../fonts/style.scss";
+@import "./config";
+@import "./root";
+@import "./typography";
+@import "./animations";
+@import "./util";
+@import "../components/button";
+@import "../components/input";
 
 * {
-    // transition: all .2s;
+  // transition: all .2s;
+  box-sizing: border-box;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
-ul{
-    list-style:none;
-    margin:0;
-    padding:0;
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 body {
-    font-family:$primaryFont;
-    font-weight:300;
-    line-height:1.6rem;
+  font-family: $primaryFont;
+  font-weight: 300;
+  line-height: 1.6rem;
 }
-
-.row {
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-}
-
-.col {
-    display: flex;
-    flex-direction: column;
-}
-
-.circle {
-    height: 12.5rem;
-    width: 12.5rem;
-    border-radius: 50%;
-    @include flexCenter;
-
-    &-green {
-        background-color:$green;
-    }
-}
-

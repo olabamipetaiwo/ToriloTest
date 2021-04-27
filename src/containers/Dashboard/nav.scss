@@ -7,9 +7,13 @@ nav.nav {
     justify-content: flex-start;
     padding: 0;
     width: 24rem;
-    height: 90vh;
-    height: 85vh;
+    // height: 85vh;
+    height: 100%;
     padding-top: 10rem;
+
+   @include respond(misc1) {
+    width: 100%;
+   }
 
 
     li {

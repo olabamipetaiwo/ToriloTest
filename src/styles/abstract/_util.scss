@@ -1,41 +1,175 @@
 .ms {
-    margin-top:2rem !important;
-    margin-bottom:2rem !important;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .my {
-    margin-top:2rem;
-    margin-bottom:2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.mt-xs {
+  margin-top: 1rem;
+}
+
+.mt-sm {
+  margin-top: 2rem;
+}
+
+.mt-md {
+  margin-top: 3rem;
+}
+
+.mt-lg {
+  margin-top: 4rem;
+}
+
+.mt-xl {
+  margin-top: 6rem;
 }
 
 .mb-xs {
-    margin-bottom:1rem !important;
+  margin-bottom: 1rem;
 }
 
 .mb-sm {
-    margin-bottom:2rem !important;
+  margin-bottom: 2rem;
 }
 
 .mb-md {
-    margin-bottom:3rem !important;
+  margin-bottom: 3rem;
 }
 
 .mb-lg {
-    margin-bottom:4rem !important;
+  margin-bottom: 4rem;
 }
 
 .mb-xl {
-    margin-bottom:6rem !important;
+  margin-bottom: 6rem;
 }
 
+.mr-xs {
+  margin-right: 1rem;
+}
+
+.mr-sm {
+  margin-right: 2rem;
+}
+
+.mr-md {
+  margin-right: 3rem;
+}
+
+.mr-lg {
+  margin-right: 4rem;
+}
+
+.mr-xl {
+  margin-right: 6rem;
+}
+
+.ml-xs {
+  margin-left: 1rem;
+}
+
+.ml-sm {
+  margin-left: 2rem;
+}
+
+.ml-md {
+  margin-left: 3rem;
+}
+
+.ml-lg {
+  margin-left: 4rem;
+}
+
+.ml-xl {
+  margin-left: 6rem;
+}
 
 //Colors
-.black {color:$black;}  
-.white {color:$white;}  
-.nearwhite {color:$nearWhite;}  
-.grey-c {color:$grey-c;}  
-.grey-6 {color:$grey-6;}  
-.grey-9 {color:$grey-9;}  
-.grey-3{color:$grey-3;}  
+.black {
+  color: $black;
+}
+.white {
+  color: $white;
+}
+.nearwhite {
+  color: $nearWhite;
+}
+.grey-c {
+  color: $grey-c;
+}
+.grey-6 {
+  color: $grey-6;
+}
+.grey-9 {
+  color: $grey-9;
+}
+.grey-3 {
+  color: $grey-3;
+}
 
+//Layout
+.d-flex {
+  display: flex;
+}
 
+.main {
+  min-height: 100vh;
+  background-color: $white;
+  overflow-x: hidden;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+
+  .row-lg {
+    flex-basis: 75%;
+  }
+  .row-md {
+    flex-basis: 50%;
+  }
+
+  .row-sm {
+    flex-basis: 25%;
+  }
+}
+
+.col {
+  display: flex;
+  flex-direction: column;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+//Colors
+.black {
+  color: $black;
+}
+.white {
+  color: $white;
+}
+.nearwhite {
+  color: $nearWhite;
+}
+.grey-c {
+  color: $grey-c;
+}
+.grey-6 {
+  color: $grey-6;
+}
+.grey-9 {
+  color: $grey-9;
+}
+.grey-3 {
+  color: $grey-3;
+}

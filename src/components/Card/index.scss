@@ -1,0 +1,27 @@
+@import "../../styles/abstract/base";
+
+.card {
+  flex-basis: 24%;
+  border-radius: 2px;
+  padding: 2.5rem;
+  color: $secondary;
+
+  h5 {
+    @include fontNormal(1.2rem, 1.5rem, $secondary);
+    margin-bottom: 1.5rem;
+  }
+
+  p {
+    @include fontNormal(1.2rem, 1.5rem, #919eab);
+    svg {
+      margin-right: 0.3rem;
+    }
+    &.up {
+      color: $success;
+    }
+
+    &.down {
+      color: $danger;
+    }
+  }
+}

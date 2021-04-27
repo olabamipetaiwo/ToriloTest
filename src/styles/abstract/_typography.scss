@@ -11,29 +11,29 @@ html {
   scroll-behavior: smooth;
 }
 
-// @media only screen and (min-width: 112.5em) {
-//   html {
-//     font-size: 75%;
-//   }
-// }
+@media only screen and (min-width: 112.5em) {
+  html {
+    font-size: 75%;
+  }
+}
 
-// @media only screen and (max-width: 75em) {
-//   html {
-//     font-size: 56.25%;
-//   }
-// }
+@media only screen and (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
 
-// @media only screen and (max-width: 56.25em) {
-//   html {
-//     font-size: 50%;
-//   }
-// }
+@media only screen and (max-width: 56.25em) {
+  html {
+    font-size: 50%;
+  }
+}
 
-// @media only screen and (max-width: 37.5em) {
-//   html {
-//     font-size: 50%;
-//   }
-// }
+@media only screen and (max-width: 37.5em) {
+  html {
+    font-size: 50%;
+  }
+}
 
 h1,
 h2,
@@ -52,7 +52,7 @@ body {
 }
 
 .h-1 {
-  @include fontBold(3.6rem, 4.6rem, $black);
+  @include fontBold(2rem, 2.5rem, $secondary);
   font-weight: 700;
 }
 
@@ -66,9 +66,6 @@ body {
   font-weight: 300;
 }
 
-.h-admin-bold {
-  @include fontBold(2rem, 3rem, $black);
-}
 
 .p-1 {
   @include fontNormal(1.4rem, 2rem, $grey-6);
