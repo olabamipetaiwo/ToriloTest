@@ -6,6 +6,10 @@
   padding: 2.5rem;
   color: $secondary;
 
+  h2 {
+    padding-bottom: 0.4rem;
+  }
+
   h5 {
     @include fontNormal(1.2rem, 1.5rem, $secondary);
     margin-bottom: 1.5rem;
@@ -13,6 +17,7 @@
 
   p {
     @include fontNormal(1.2rem, 1.5rem, #919eab);
+    padding-bottom: 0.6rem;
     svg {
       margin-right: 0.3rem;
     }

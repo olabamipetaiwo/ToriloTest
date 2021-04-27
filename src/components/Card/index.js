@@ -18,7 +18,6 @@ const Card = ({ data }) => {
       {data.trend === true ? (
         <p className="d-flex up align-center">
           <ArrowUp />
-
           {data?.percent}
         </p>
       ) : (

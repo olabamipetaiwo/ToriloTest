@@ -12,6 +12,11 @@
   box-sizing: border-box;
 }
 
+p {
+  margin: 0;
+  padding: 0;
+}
+
 a {
   text-decoration: none;
 }
@@ -24,6 +29,8 @@ ul {
 
 button {
   cursor: pointer;
+  outline: none;
+  border: none;
 }
 
 body {
@@ -31,3 +38,61 @@ body {
   font-weight: 300;
   line-height: 1.6rem;
 }
+
+// DropDown
+.dropButton {
+  position: relative;
+
+  button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    border: 1px solid #e3eded;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+
+    svg {
+      margin-left: 2rem;
+    }
+  }
+}
+
+// DropDown
+
+// Pagination
+section.pagination {
+  @include flexCenter;
+
+  ul {
+    li {
+      button {
+        @include flexCenter;
+        border: 1px solid #e3eded;
+        border-radius: 2px;
+        background-color: transparent;
+        width: 4rem;
+        height: 4rem;
+        margin-right: 1rem;
+        @include fontNormal(1.2rem,1.4rem,$grey);
+
+        &.active,
+        &:hover {
+          background-color: $secondary;
+          color: $white;
+          border: none;
+          outline:none;
+        }
+      }
+
+      &:last-child,
+      &:first-child {
+        button {
+          border: none;
+        }
+      }
+    }
+  }
+}
+// Pagination

@@ -1,0 +1,88 @@
+@import "../../../../styles/abstract/base";
+
+.table__container {
+  border: 1px solid #e3eded;
+  border-radius: 2px;
+  padding: 2.2rem 3rem;
+
+  ul.tabs {
+    border: 1px solid #e3eded;
+    border-radius: 0px 2px 2px 0px;
+
+    li {
+      &:not(:last-child) {
+        background-color: red;
+        border-right: 1px solid #e3eded;
+      }
+
+      button {
+        border: none;
+        outline: none;
+        background-color: $white;
+        padding: 5px 2rem;
+        @include fontNormal(1.2rem, 1.5rem, $dark);
+
+        svg {
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+
+  section.table {
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+
+    td,
+    th {
+      border: none;
+      border-bottom: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+      cursor: pointer;
+    }
+
+    th {
+      @include fontNormal(1.2rem, 1.5rem, #637381);
+      @include image;
+    }
+
+    td {
+      @include fontNormal(1.2rem, 1.5rem, $dark);
+      @include image;
+
+      &.status {
+        // @include flexCenter;
+
+        .badge {
+          border-radius: 20px;
+          padding: 0.5rem;
+          // min-width: 8rem;
+          // height: 2rem;
+          @include flexCenter;
+
+          &.badge-pending {
+            background-color: #fffae8;
+            color: #ffca00;
+          }
+
+          &.badge-declined {
+            background-color: #fdece2;
+            color: #fa5f1c;
+          }
+
+          &.badge-approved {
+            background-color: #e3f1df;
+            color: #50b83c;
+          }
+        }
+      }
+    }
+
+    tr:hover {
+      background-color: $blueBg;
+    }
+  }
+}

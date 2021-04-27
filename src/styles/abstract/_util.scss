@@ -122,20 +122,24 @@
   overflow-x: hidden;
 }
 
+.w-100 {
+  width: 100%;
+}
+
 .row {
   display: flex;
   align-items: center;
+}
 
-  .row-lg {
-    flex-basis: 75%;
-  }
-  .row-md {
-    flex-basis: 50%;
-  }
+.row-lg {
+  flex-basis: 62%;
+}
+.row-md {
+  flex-basis: 50%;
+}
 
-  .row-sm {
-    flex-basis: 25%;
-  }
+.row-sm {
+  flex-basis: 30%;
 }
 
 .col {
@@ -152,6 +156,10 @@
 }
 
 //Colors
+.primary {
+  color: $primary;
+}
+
 .black {
   color: $black;
 }
