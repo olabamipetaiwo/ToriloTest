@@ -12,7 +12,7 @@ const CustomerSatisfaction = ({ reviews }) => {
     <Fragment>
       <div className="col customerSatisfaction">
         <h2 className="h-1 primary">Customer Satisfaction</h2>
-        <p className="p-1 grey mt-xs mb-xs"> Across help desk this month</p>
+        <p className="p-1 grey mb-sm"> Across help desk this month</p>
         <p className="p-1 primary"> Response received</p>
         <h3 className="h-1 mb-sm">390</h3>
 

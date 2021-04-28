@@ -11,6 +11,7 @@
 
     li {
       &:not(:last-child) {
+        background-color: red;
         border-right: 1px solid #e3eded;
       }
 
@@ -20,17 +21,6 @@
         background-color: $white;
         padding: 5px 2rem;
         @include fontNormal(1.2rem, 1.5rem, $dark);
-
-        @include respond(phone) {
-          padding: 5px 1rem;
-        }
-
-        &.active,
-        &:hover {
-          background-color: #eaeffd;
-          border-bottom: 3px solid #2979f2;
-          border-radius: 0px 0px 2px 2px;
-        }
 
         svg {
           margin-right: 5px;
@@ -43,14 +33,6 @@
     table {
       border-collapse: collapse;
       width: 100%;
-
-      @include respond(phone) {
-        tr {
-          display: flex;
-          flex-direction: column;
-          margin-bottom: 2rem;
-        }
-      }
     }
 
     td,

@@ -9,10 +9,13 @@
     width: 40rem;
     flex-shrink: 1;
 
+    input {
+      width: 100%;
+    }
+
     @include respond(misc3) {
       width: auto;
     }
-
   }
 
   &__box {
@@ -67,7 +70,7 @@
 
         &.show {
           display: block;
-          animation: slideIn 0.3s ease-in-out;
+          animation: slideIn 0.2s cubic-bezier(1, 0, 0, 1);
         }
       }
 
@@ -76,6 +79,7 @@
         height: 4.6rem;
         border-radius: 50%;
         margin: 0;
+        cursor: pointer;
 
         img {
           border-radius: 50%;

@@ -2,10 +2,29 @@
 
 .overview {
   .cards {
-    // flex-wrap: wrap;
+    @include respond(tab-port) {
+      flex-wrap: wrap;
+
+      .card {
+        margin-bottom: 2rem;
+        flex-basis: 100%;
+      }
+    }
   }
 
   .table {
-    
+    overflow-x: auto;
+  }
+
+  .mainView {
+    @include respond(tab-land) {
+      flex-wrap: wrap;
+
+      .row-lg,
+      .row-sm {
+        flex-basis: 100%;
+        margin-bottom: 2rem;
+      }
+    }
   }
 }

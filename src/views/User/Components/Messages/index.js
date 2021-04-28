@@ -1,8 +1,23 @@
 import React, { Fragment } from "react";
 import PropTypes from "prop-types";
+import { ReactComponent as Option } from "assets/svgs/option.svg";
 import "./index.scss";
 
 const Messages = ({ messages }) => {
+  const showOptions = (id) => {
+    const containers = Array.from(document.querySelectorAll(".messageOptions"));
+    containers.forEach((item) => {
+      if (item.getAttribute("id") === id) {
+        if (item.classList.contains("show")) {
+          item.classList.remove("show");
+        } else {
+          item.classList.add("show");
+        }
+      } else {
+        item.classList.remove("show");
+      }
+    });
+  };
   return (
     <Fragment>
       <section className="messages">
@@ -11,16 +26,16 @@ const Messages = ({ messages }) => {
           <button className="btn btn-blue">+ &nbsp; New message</button>
         </div>
 
-        <ul>
+        <ul className="messageContainer">
           {messages.length > 0 &&
             messages.map((message) => {
               return (
                 <li>
-                  <div className="d-flex">
+                  <div className="d-flex space-between messageItem">
                     <figure className="mr-xs">
                       <img src={message.display} alt={message.name} />
                     </figure>
-                    <div className="col w-100 messageItem">
+                    <div className="col messageInfo">
                       <h5>{message.name}</h5>
                       <p>
                         {message.messages[message.messages.length - 1].content}
@@ -29,6 +44,16 @@ const Messages = ({ messages }) => {
                         {message.messages[message.messages.length - 1].time}
                       </p>
                     </div>
+                    <button
+                      onClick={showOptions.bind(this, message.name)}
+                      className="transparent"
+                    >
+                      <Option />
+                    </button>
+                    <ul className="col messageOptions" id={message.name}>
+                      <li>View</li>
+                      <li>Edit</li>
+                    </ul>
                   </div>
                 </li>
               );

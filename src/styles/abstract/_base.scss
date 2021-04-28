@@ -53,8 +53,38 @@ body {
     align-items: center;
     padding: 1rem 2rem;
 
+    @include respond(phone) {
+      padding: 1rem;
+    }
+
     svg {
       margin-left: 2rem;
+    }
+  }
+
+  ul.sort__list {
+    width: 100%;
+    position: absolute;
+    top: -3rem;
+    right: 0;
+    transition: all 0.3s ease;
+    background-color: $nearWhite;
+    opacity: 0;
+    padding: 1rem;
+    pointer-events: none;
+
+    &.active {
+      opacity: 1;
+      top: 3rem;
+      pointer-events: auto;
+    }
+
+    li {
+      cursor: pointer;
+
+      &:hover {
+        font-weight: bold;
+      }
     }
   }
 }
@@ -75,14 +105,18 @@ section.pagination {
         width: 4rem;
         height: 4rem;
         margin-right: 1rem;
-        @include fontNormal(1.2rem,1.4rem,$grey);
+        @include fontNormal(1.2rem, 1.4rem, $grey);
 
         &.active,
         &:hover {
           background-color: $secondary;
           color: $white;
           border: none;
-          outline:none;
+          outline: none;
+        }
+
+        &.rest {
+          border: none;
         }
       }
 

@@ -88,6 +88,27 @@
   margin-left: 6rem;
 }
 
+//Padding
+.pl-xs {
+  padding-left: 1rem;
+}
+
+.pl-sm {
+  padding-left: 2rem;
+}
+
+.pl-md {
+  padding-left: 3rem;
+}
+
+.pl-lg {
+  padding-left: 4rem;
+}
+
+.pl-xl {
+  padding-left: 6rem;
+}
+
 //Colors
 .black {
   color: $black;
@@ -109,6 +130,10 @@
 }
 .grey-3 {
   color: $grey-3;
+}
+
+.transparent {
+  background-color: transparent;
 }
 
 //Layout

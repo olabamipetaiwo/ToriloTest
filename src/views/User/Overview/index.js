@@ -37,7 +37,7 @@ const Overview = () => {
             {/* Chart */}
 
             {/* FOoter */}
-            <section className="d-flex space-between mt-sm">
+            <section className="d-flex space-between mt-sm mainView">
               {/* Table */}
               <section className="row-lg">
                 <Table tableData={tableData} />
